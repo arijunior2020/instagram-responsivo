@@ -8,6 +8,9 @@ Este projeto é um clone da interface do Instagram utilizando HTML e CSS. O layo
   - [Índice](#índice)
   - [Visão Geral](#visão-geral)
   - [Estrutura do Projeto](#estrutura-do-projeto)
+  - [Print do Projeto](#print-do-projeto)
+    - [Versão Desktop](#versão-desktop)
+    - [Versão Mobile](#versão-mobile)
 
 ## Visão Geral
 
@@ -37,3 +40,13 @@ O projeto está organizado da seguinte forma:
 │   └── fonts
 ├── index.html
 └── README.md
+```
+## Print do Projeto
+ 
+ ### Versão Desktop
+
+![Logo do Instagram](assets/images/prints/Instagram-Versão%20Desktop.png)
+
+### Versão Mobile
+
+![Logo do Instagram](assets/images/prints/Instagram-Versão%20Mobile.png)
