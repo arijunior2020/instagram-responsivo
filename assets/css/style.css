@@ -10,6 +10,8 @@
 
 .logo {
     display: flex;
+    position: relative;
+    left: 32%;
     align-items: center;
     width: 103px;
     height: 29px;
@@ -29,9 +31,6 @@
     margin-right: 20px;
 }
 
-#logo-def {
-    margin-left: 33.3%;
-}
 
 .cabecalho {
     position: fixed;
@@ -47,8 +46,9 @@
     height: 60px; /* Altura fixa para o cabeçalho */
 }
 
+
 .cabecalho img {
-    width: 100px;
+    width: 103px;
 }
 
 .conteudo-principal {
@@ -132,11 +132,11 @@
 .sidebar {
     display: flex;
     flex-direction: column;
-    width: 293px;
+    width: 15%;
     position: absolute;
-    top: 140px; /* Ajuste conforme necessário */
-    right: 10px;
-    margin-right: 300px;
+    top: 11%; /* Ajuste conforme necessário */
+    right: 15%;
+    margin-right: 5%;
 }
 
 .sidebar-item {
@@ -212,10 +212,17 @@
 }
 
 h1 {
+    font-family: "Roboto";
     font-size: 14px;
 }
 
 h2 {
+    font-family: "Roboto";
+    font-size: 12px;
+}
+
+h3 {
+    font-family: "Roboto";
     font-size: 12px;
 }
 
@@ -223,9 +230,37 @@ h2 {
     font-weight: 700;
 }
 
+@media (max-width: 1440px) {
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        width: 15%;
+        position: absolute;
+        top: 12%; /* Ajuste conforme necessário */
+        right: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .sidebar {
+        display: none;
+    }
+}
+
 @media (max-width: 935px) {
     .sidebar {
         display: none;
+    }
+
+    .logo {
+        display: flex;
+        position: relative;
+        left: 0%;
+        align-items: center;
+        width: 103px;
+        height: 29px;
+        margin-top: 14px;
     }
 }
 
@@ -250,8 +285,27 @@ h2 {
         background-color: white;
         width: 100%;
     }
-    #logo-def {
-        margin-left: 5px;
+
+    .thumbnail-agrupamento {
+        display: none;
+    }
+    .cabecalho {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        background-color: white;
+        z-index: 2; /* Certifica-se de que o cabeçalho esteja acima de outros elementos */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px; /* Garante espaçamento lateral */
+        height: 60px; /* Altura fixa para o cabeçalho */
+    }
+    .cabecalho .logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 
