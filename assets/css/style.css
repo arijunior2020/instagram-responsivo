@@ -1,0 +1,260 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 2000px;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 103px;
+    height: 29px;
+    margin-top: 14px;
+}
+
+
+.thumbnail-agrupamento{
+    display: flex;
+}
+
+.thumbnail ion-icon{
+    display: flex;
+    align-items: center;
+    width: 22px;
+    height: 22px;
+    margin-right: 20px;
+}
+
+#logo-def {
+    margin-left: 33.3%;
+}
+
+.cabecalho {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: white;
+    z-index: 2; /* Certifica-se de que o cabeçalho esteja acima de outros elementos */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Garante espaçamento lateral */
+    height: 60px; /* Altura fixa para o cabeçalho */
+}
+
+.cabecalho img {
+    width: 100px;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteudo-stories {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    margin-top: 88px;
+    margin-bottom: 10px;
+    width: 614px;
+    background-color: white;
+}
+
+.stories {
+    width: 614px; /* Define a largura fixa para a coluna de stories */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.stories-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 56px; /* Define a largura fixa para cada item de stories */
+    height: 56px; /* Define a altura fixa para cada item de stories */
+    margin: 20px 10px;
+}
+
+
+.conteudo-post {
+    width: 614px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.post {
+    margin-top: 16px;
+    width: 100%;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+}
+
+.post img {
+    width: 100%;
+}
+
+.post ion-icon {
+    width: 22px;
+    height: 22px;
+    margin-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.post-thumbnail {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px;
+}
+
+.post-thumbnail img {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    margin: 10px 10px;
+}
+
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 293px;
+    position: absolute;
+    top: 140px; /* Ajuste conforme necessário */
+    right: 10px;
+    margin-right: 300px;
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Garante espaço entre os elementos dentro da sidebar */
+    margin-bottom: 10px; /* Espaçamento entre itens na sidebar */
+}
+
+.sidebar img {
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
+    margin-right: 10px; /* Espaçamento entre a imagem e o texto */
+}
+
+.sidebar-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Garante que o texto e o link "Seguir" ocupem toda a largura disponível */
+    font-weight: 700 !important;
+    color: #262626;
+
+}
+
+.sidebar-text h1 span {
+    display: block;
+    font-size: 14px;
+    margin: 0;
+    flex-grow: 1; /* O texto ocupa o máximo de espaço possível */
+}
+
+.sidebar-text h2 {
+    font-size: 12px;
+    font-weight: 500;
+    color: #8E8E8E;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sidebar-text h3 {
+    font-size: 12px;
+    font-weight: 400;
+    color: #8E8E8E;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.sidebar-text a {
+    margin-left: 10px; /* Espaço entre o texto e o link */
+    font-size: 12px;
+    font-weight: 400;
+    color: #139EF2;
+    text-decoration: none;
+}
+
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 14px;
+}
+
+h2 {
+    font-size: 12px;
+}
+
+.post-negrito {
+    font-weight: 700;
+}
+
+@media (max-width: 935px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+@media (max-width: 614px) {
+    .conteudo-stories {
+        background-color: none;
+    }
+    .post {
+        width: 100%;
+    }
+    .thumbnail-visible {
+        display: none;
+    }
+    .thumbnail-invisible {
+        display: flex !important;
+        position: fixed !important;
+        align-items: center;
+        justify-content: space-between !important;
+        bottom: 0px;
+        left: 0;
+        z-index: 2;
+        background-color: white;
+        width: 100%;
+    }
+    #logo-def {
+        margin-left: 5px;
+    }
+}
+
+.thumbnail-invisible {
+    display: none;
+}
